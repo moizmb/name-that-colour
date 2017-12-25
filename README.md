@@ -7,13 +7,17 @@ Ntc can be used as
     require "./ntc"
 
     color = Ntc.new("#000000")
+    # #<Ntc:0x00000001a63758 @color="#000000">
 
-    puts color.name
+    color.name
     # ["#000000", "Black", true]
 
-    color_rgb = color[0] # RGB value of the closest match
-    color_name = color[1] # Name of closest match
-    color_exactmatch = color[2] # True if exact color match
+    color_rgb = color.name[0] # RGB value of the closest match
+    # "#000000"
+    color_name = color.name[1] # Name of closest match
+    # "Black"
+    color_exactmatch = color.name[2] # True if exact color match
+    # true
 
 
 # License
